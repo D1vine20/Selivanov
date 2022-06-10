@@ -1,0 +1,128 @@
+.header {
+    padding: 25px 0px 250px 0px;
+
+    .header__row {
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+    }
+}
+.header__logo {
+    color: #E84545;
+    font-family: 'Teko', sans-serif;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 52px;
+    background: linear-gradient(to right, #E84545 0, #fff 50%, #E84545 20%);
+    background-position: 0;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 5s infinite linear;
+    animation-fill-mode: forwards;
+    -webkit-text-size-adjust: none;
+
+    @keyframes shine {
+        0% {
+            background-position: 0px;
+        }
+        50% {
+            background-position: 100px;
+        }
+        100% {
+            background-position: 250px;
+        }
+        
+    }
+}
+.nav__list {
+    display: flex;
+    margin-left: 160px;
+
+    .nav__item + .nav__item {
+        margin-left: 58px;
+    }
+    .nav__link {
+        position: relative;
+        padding-bottom: 5px;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 21px;
+        transition: width 0.6s ease;
+
+        &::before {
+            position: absolute;
+            content: '';
+            bottom: 0;
+            background-color: #E84545;
+            width: 0%;
+            height: 1px;
+            transition: width 0.6s ease;
+        }
+        &:hover::before {
+            width: 115%;
+        }
+    }
+}
+.header-email {
+    margin-left: auto;
+
+    .header-email__icon {
+        transition: fill 0.3s ease;
+    }
+    &:hover {
+        .header-email__icon {
+            fill: #E84545;
+            transition: fill 0.3s ease;
+        }
+    }
+}
+.header__fon {
+    z-index: -3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.header-menu {
+    position: relative;
+    z-index: 999;
+    display: none;
+    justify-content: center;
+    align-items: center;
+ }
+ 
+ .header-menu__icon {
+    display: block;
+    position: relative;
+    width: 15px;
+    height: 1px;
+    background-color: #fff;
+ 
+    &::after,
+    &::before {
+       position: absolute;
+       content: '';
+       width: 15px;
+       height: 1px;
+       background-color: #fff;
+       transition: transform 0.15s ease-in, top 0.15s ease-in 0.15s;
+    }
+ 
+    &::before {
+       left: 0;
+       top: -5px;
+    }
+ 
+    &::after {
+       left: 0;
+       top: 5px;
+    }
+ }

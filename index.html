@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@500&family=Work+Sans:wght@300;400;600;900&display=swap" rel="stylesheet">
+    <title>Selivanov</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/onepage-scroll.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="./js/jquery.onepage-scroll.js"></script>
+</head>
+<body class="body">
+    <main class="main wrapper">
+        <section class="hello page1">
+            <header class="header">
+                <div class="container">
+                    <div class="header__row">
+                        <a href="#" class="header__logo">Selivanov</a>
+                        <nav class="header__nav nav">
+                            <ul class="nav__list">
+                                <li class="nav__item"><a href="#section2" class="nav__link">About me</a></li>
+                                <li class="nav__item"><a href="#section2" class="nav__link">Portfolio</a></li>
+                                <li class="nav__item"><a href="#section2" class="nav__link">Contact</a></li>
+                                <li class="nav__item"><a href="#" class="nav__link">Review</a></li>
+                            </ul>
+                        </nav>
+                        <a href="mailto:webselivanov@gmail.com" onclick="alertMessage()" class="header-email">
+                            <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M49 25C49 38.2548 38.2548 49 25 49C11.7452 49 1 38.2548 1 25C1 11.7452 11.7452 1 25 1C38.2548 1 49 11.7452 49 25Z" stroke="white" stroke-width="2"/>
+                                <path class="header-email__icon" d="M28.0735 25.2053L25.3918 27.2551C25.1776 27.4149 24.8653 27.4149 24.6572 27.2551L21.9755 25.2108L11.0225 33.5423H38.9776L28.0735 25.2053Z" fill="white"/>
+                                <path class="header-email__icon" d="M10 16.0804V32.9196L21.0265 24.5L10 16.0804Z" fill="white"/>
+                                <path class="header-email__icon" d="M11.0225 15.4578L25 26.131L38.9776 15.4578H11.0225Z" fill="white"/>
+                                <path class="header-email__icon" d="M28.9736 24.5L40.0002 32.9196V16.0804L28.9736 24.5Z" fill="white"/>
+                            </svg>                                
+                        </a>
+                        <button type="button" class="header-menu">
+                            <span class="header-menu__icon"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="header__fon"><img src="./img/fon.jpg" alt="Fon"></div>
+            </header>
+            <div class="mobile">
+                <a href="index.html" class="mobile__logo">Selivanov</a>
+                <ul class="mobile-nav">
+                   <li class="mobile-nav__item"><a href="index.html" class="mobile-nav__link" onclick="noScroll()">About me</a></li>
+                   <li class="mobile-nav__item"><a href="#section2" class="mobile-nav__link" onclick="noScroll()">Portfolio</a></li>
+                   <li class="mobile-nav__item"><a href="#section2" class="mobile-nav__link" onclick="noScroll()">Contact</a></li>
+                   <li class="mobile-nav__item"><a href="index.html" class="mobile-nav__link" onclick="noScroll()">Review</a></li>
+                </ul>
+                <div class="mobile__btns">
+                   <div class="mobile-email"><a href="mailto:webselivanov@gmail.com" onclick="alertMessage()"><img src="./img/email.svg" alt="Email"></a></div>
+                </div>
+             </div>
+            <div class="container container-wide">
+                <div class="hello__body">
+                    <div id="typed-strings">
+                        <span>Hello, i'm D1vi...</span>
+                        <span>Hello, i’m <span class="hello-border red">Alexey Selivanov</span>. <br>I’m a <span class="red">F</span>ront <span class="red">E</span>nd <span class="red">W</span>eb <span class="red">D</span>eveloper.</span>
+                    </div>
+                    <div id="typed-strings_two">
+                        <span><span class="red">F</span>ront <span class="red">E</span>nd <span class="red">D</span>eveloper who focuses on writing clean, elegant and efficient code.</span>
+                    </div>
+                    <h1 class="hello__title" id="typed"></h1>
+                    <p class="hello__subtitle" id="typed_two"></p>
+                    <div class="hello__btn" id="hello__btn"><a href="#" class="btn">View my <span class="btn-red">work</span></a></div>
+                </div>
+            </div>
+        </section>
+        <section id="section2" class="developer page2">
+            <div class="container container-wide2">
+                <div class="developer__body">
+                    <h1 class="developer__heading">Web Developer</h1>
+                    <div class="developer-block">
+                        <img src="./img/avatar.jpg" alt="Avatar" class="developer-block__img">
+                        <p class="developer-block__name"><span class="red">A</span>lexey <span class="red">S</span>elivanov</p>
+                        <p class="developer-block__number">+7 (<span class="red">705</span>) 214 - <span class="red">43</span> - <span class="red">81</span></p>
+                        <div class="developer-block__socials">
+                            <a href="https://t.me/d1vine20" class="developer-block__social">
+                                <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M49 25C49 38.2548 38.2548 49 25 49C11.7452 49 1 38.2548 1 25C1 11.7452 11.7452 1 25 1C38.2548 1 49 11.7452 49 25Z" stroke="#E84545" stroke-width="2"/>
+                                    <path class="developer-block__icon" d="M11.4394 24.4583L35.5436 15.1645C36.6623 14.7604 37.6394 15.4374 37.2769 17.1291L37.279 17.127L33.1748 36.4624C32.8706 37.8333 32.0561 38.1666 30.9165 37.5208L24.6665 32.9145L21.6519 35.8187C21.3186 36.152 21.0373 36.4333 20.3915 36.4333L20.8352 30.0729L32.4186 19.6083C32.9227 19.1645 32.3061 18.9145 31.6415 19.3562L17.3269 28.3687L11.1561 26.4437C9.81648 26.0187 9.78731 25.1041 11.4394 24.4583Z" fill="white"/>
+                                </svg>                                               
+                            </a>
+                            <a href="mailto:webselivanov@gmail.com" onclick="alertMessage()" class="developer-block__social">
+                                <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M49 25C49 38.2548 38.2548 49 25 49C11.7452 49 1 38.2548 1 25C1 11.7452 11.7452 1 25 1C38.2548 1 49 11.7452 49 25Z" stroke="#E84545" stroke-width="2"/>
+                                    <path class="developer-block__icon" d="M28.0735 25.2053L25.3918 27.2551C25.1776 27.4149 24.8653 27.4149 24.6572 27.2551L21.9755 25.2108L11.0225 33.5423H38.9776L28.0735 25.2053Z" fill="white"/>
+                                    <path class="developer-block__icon" d="M10 16.0804V32.9196L21.0265 24.5L10 16.0804Z" fill="white"/>
+                                    <path class="developer-block__icon" d="M11.0225 15.4578L25 26.131L38.9776 15.4578H11.0225Z" fill="white"/>
+                                    <path class="developer-block__icon" d="M28.9736 24.5L40.0002 32.9196V16.0804L28.9736 24.5Z" fill="white"/>
+                                    </svg>                                    
+                            </a>
+                            <a href="https://vk.com/d1vine_1" class="developer-block__social">  
+                                <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M49 25C49 38.2548 38.2548 49 25 49C11.7452 49 1 38.2548 1 25C1 11.7452 11.7452 1 25 1C38.2548 1 49 11.7452 49 25Z" stroke="#E84545" stroke-width="2"/>
+                                    <path class="developer-block__icon" fill-rule="evenodd" clip-rule="evenodd" d="M24.0556 35.9648H26.0178C26.0178 35.9648 26.6105 35.8997 26.9131 35.5735C27.1916 35.274 27.1827 34.7116 27.1827 34.7116C27.1827 34.7116 27.1444 32.0787 28.3663 31.691C29.5709 31.3091 31.1178 34.2357 32.7573 35.3609C33.9971 36.2126 34.9392 36.0258 34.9392 36.0258L39.3231 35.9648C39.3231 35.9648 41.6164 35.8235 40.529 34.0204C40.4398 33.8729 39.8957 32.6866 37.2695 30.2489C34.5207 27.6975 34.8888 28.1102 38.2 23.697C40.2166 21.0093 41.0228 19.3684 40.771 18.6656C40.5308 17.9962 39.0476 18.1731 39.0476 18.1731L34.1116 18.2039C34.1116 18.2039 33.7458 18.154 33.4744 18.3162C33.2092 18.4753 33.0385 18.8461 33.0385 18.8461C33.0385 18.8461 32.2573 20.9259 31.2154 22.6947C29.0174 26.427 28.1386 26.624 27.7794 26.3922C26.9438 25.8521 27.1524 24.2224 27.1524 23.0646C27.1524 19.4477 27.701 17.9396 26.0842 17.5492C25.5476 17.4196 25.1528 17.334 23.7806 17.3202C22.0194 17.3019 20.5287 17.3255 19.6846 17.7391C19.1231 18.014 18.69 18.6268 18.9538 18.662C19.28 18.7057 20.0189 18.8612 20.4106 19.3947C20.9164 20.0827 20.8986 21.6283 20.8986 21.6283C20.8986 21.6283 21.1892 25.886 20.2199 26.415C19.5545 26.7777 18.6418 26.0371 16.6823 22.651C15.6783 20.9166 14.9202 18.9994 14.9202 18.9994C14.9202 18.9994 14.774 18.6411 14.5133 18.4494C14.1969 18.2173 13.7548 18.1433 13.7548 18.1433L9.06439 18.174C9.06439 18.174 8.36027 18.1936 8.10179 18.4998C7.87184 18.7721 8.08352 19.3354 8.08352 19.3354C8.08352 19.3354 11.7557 27.9266 15.9136 32.2561C19.7261 36.2255 24.0556 35.9648 24.0556 35.9648Z" fill="white"/>
+                                </svg>                                                                   
+                            </a>
+                        </div>
+                        <img src="./img/code.png" alt="QR Code" class="developer-block__qrcode">
+                        <div class="developer-block__btn"><a href="#" class="btn">Write <span class="btn-red">me</span></a></div>
+                    </div>
+                    <div class="developer__swiper">
+                        <div class="developer__blocks">
+                            <div class="swiper-block">
+                                <a href="#pages2" class="swiper__link">
+                                    <img src="./img/onlineschool.jpg" alt="Sneakers" class="swiper__img" id="pages1">
+                                </a>
+                            </div>
+                            <div class="swiper-block">
+                                <a href="#pages1" class="swiper__link">
+                                    <img src="./img/sneakers.jpg" alt="Sneakers" class="swiper__img" id="pages2">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <h1 class="developer__title">Portfolio</h1>
+                </div>
+            </div>
+            <div class="developer__fon"><img src="./img/fon-developer.jpg" alt="Fon developer"></div>
+            <div class="developer__fon2"><img src="./img/fon-developer2.jpg" alt="Fon developer mobile"></div>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html> 

@@ -1,0 +1,29 @@
+body {
+    font-family: 'Work Sans', sans-serif;
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.container {
+    width: 1136px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.container-wide {
+    width: 1294px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.container-wide2 {
+    width: 1446px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+.red {
+    color: #E84545;
+}
